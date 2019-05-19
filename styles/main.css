@@ -1,0 +1,119 @@
+/* 
+
+Table of Content 
+
+1. Global Styles
+2. Section landing view, Navigation,Background,Related Media Querries
+3. Header section, Related Media Querries 
+
+*/
+
+/* 1. Global Styles */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap');
+
+body, html {
+    margin:0;
+    padding: 0;
+}
+a {
+    color: #fff;
+    font-size: 22px;
+}
+a:hover {
+    color: #FBBC04;
+}
+
+/* 2. Section landing view, Navigation,Background, Related Custom Media Querries */
+
+.section-landing-view {
+    background-image: url('/assets/images/laptop-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.bg-secondary {
+    background-color: #00000000!important;
+}
+
+.navbar-brand {
+    font-family: Poppins,sans-serif; 
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+    font-family: Poppins,sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link {
+    color: #fff;
+    word-spacing: 3px;  
+  }
+  
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+    color: #FBBC04;
+  }
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+    color: rgb(185, 185, 185);
+  }
+
+.a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover {
+	background-color: #00000000 !important;
+}
+
+.bg-primary {
+	background-color: #00000000 !important;
+}
+
+@media (max-width: 991px) {
+
+    #mainNav .navbar-nav li.nav-item a.nav-link {
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        }     
+}
+
+/* 3. Header section */
+
+header.masthead {
+    padding-top: 45vh; 
+}
+
+header.masthead h2 {
+    font-size: 33px;
+    line-height: 3rem;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(32, 32, 32) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+header.masthead img {
+      padding-top: 7rem;
+      width: 3rem; 
+} 
+
+@media (max-width: 550px) {
+
+    header.masthead h2 {
+        font-size: 24px;
+        line-height: 2rem;  
+    }
+    header.masthead {
+        padding-top: 40vh;     
+    }
+    header.masthead img {
+        padding-top: 2rem;
+        width: 3rem;
+    }
+}
+
+@media (max-width: 400px) {
+    header.masthead {
+        padding-top: 35vh;     
+    }
+}
