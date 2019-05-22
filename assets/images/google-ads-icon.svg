@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="200" height="200" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Component_7_1" data-name="Component 7 – 1" clip-path="url(#clip-path)">
+    <g id="Ellipse_1" data-name="Ellipse 1" fill="none" stroke="#e1e1e1" stroke-width="2">
+      <circle cx="100" cy="100" r="100" stroke="none"/>
+      <circle cx="100" cy="100" r="99" fill="none"/>
+    </g>
+    <g id="Group_1" data-name="Group 1" transform="translate(-78 -246)">
+      <path id="Path_1" data-name="Path 1" d="M15.15,88.965,60.468,4.37,99.692,28.8,54.322,113.391Z" transform="translate(98.272 279.765)" fill="#fbbc04"/>
+      <path id="Path_2" data-name="Path 2" d="M118.782,95.576,73.464,12.116A21.92,21.92,0,0,0,42.523,3.279,24.954,24.954,0,0,0,34.24,36.2l45.318,83.487A21.894,21.894,0,0,0,110.5,128.5,24.9,24.9,0,0,0,118.782,95.6Z" transform="translate(124.5 272.758)" fill="#4285f4"/>
+      <circle id="Ellipse_2" data-name="Ellipse 2" cx="22.659" cy="22.659" r="22.659" transform="translate(110.388 359.181)" fill="#34a853"/>
+    </g>
+  </g>
+</svg>
