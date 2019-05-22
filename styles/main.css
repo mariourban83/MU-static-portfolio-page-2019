@@ -85,14 +85,20 @@ button.bg-primary:hover {
 .bg-primary {
     background-color: rgba(0, 0, 0, 0) !important;
 }
+nav.black {
+    background:rgb(32, 32, 32);
+    transition: 1.5s;
+
+}
 
 @media (max-width: 991px) {
 
     #mainNav .navbar-nav li.nav-item a.nav-link {
-        background-color: rgb(0, 0, 0);
+        background:rgb(32, 32, 32);
         text-align: center;
     }
 }
+
 
 /* 3. Header section */
 
