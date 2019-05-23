@@ -6,6 +6,8 @@ Table of Content
 2. Section landing view, Navigation,Background,Related Media Querries
 3. Header section, Related Media Querries 
 4. About me section
+5. What I do section
+6. My skills section
 
 */
 
@@ -14,11 +16,7 @@ Table of Content
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap');
 
-body,
-html {
-    margin: 0;
-    padding: 0;
-}
+
 
 a {
     color: #fff;
@@ -32,6 +30,7 @@ a:hover {
 p {
     font-family: Roboto, sans-serif;
     font-weight: 300;
+    padding:1rem
 }
 
 .h3 {
@@ -40,10 +39,15 @@ p {
     letter-spacing: 2px;
 }
 
+.col-12, .col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 /* 2. Section landing view, Navigation,Background, Related Custom Media Querries */
 
 .section-landing-view {
-    background: url('/assets/images/laptop-bg.jpg');
+    background: url('../assets/images/laptop-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -87,8 +91,7 @@ button.bg-primary:hover {
 }
 nav.black {
     background:rgb(32, 32, 32);
-    transition: 1.5s;
-
+    transition: 1s;
 }
 
 @media (max-width: 991px) {
@@ -151,12 +154,18 @@ header.masthead img {
 
 #about-me .h3 {
     margin-bottom: 10%;
-    margin-top: 5%;
+    
+    
 }
 
-#about-me p {
-    padding-bottom: 15vh;
+div.container:nth-child(3) {
+    padding-bottom: 30px
 }
+#about-me > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) {
+    padding-bottom: 70px;
+}
+
+
 
 @media (min-width: 992px) {
     #about-me .row {
@@ -165,10 +174,10 @@ header.masthead img {
     }
 }
 
-/*  What I do section */
+/* 5. What I do section */
 
 #what-i-do .container-fluid {
-    background: url('/assets/images/server.png');
+    background: url('../assets/images/server.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -177,12 +186,10 @@ header.masthead img {
 
 #what-i-do .h3 {
     color: white;
-    padding-top: 10%;
+    padding-top:90px;
 }
 
-#what-i-do .h5 {
-    margin: 5%
-}
+
 
 #what-i-do .collumn-1,
 .collumn-2,
@@ -198,7 +205,7 @@ header.masthead img {
     padding-top: 3%;
 }
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
     #what-i-do .row {
         width: 90%;
         margin: auto;
@@ -209,7 +216,7 @@ header.masthead img {
     }
 }
 
-@media (max-width: 991px) {
+@media only screen and (max-width: 991px) {
 
     #what-i-do .collumn-1,
     .collumn-2,
@@ -218,7 +225,45 @@ header.masthead img {
         margin-bottom: 15px;
     }
 
-    #what-i-do .h3 {
-        padding-top: 17%;
+}
+
+@media only screen and (min-width: 750px) {
+    #about-me .h3 {
+        padding-top:15%;
+ }
+}
+
+@media only screen and (min-width: 992px) {
+    #about-me .h3 {
+        padding-top:15%;
     }
+}
+
+
+/* 6. My skills section */
+
+.my-skills {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+#my-skills > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1),
+#my-skills > div.row.development > div:nth-child(2),
+#my-skills > div.row.marketing > div:nth-child(1) {
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#myskills div#my-skills.container-fluid div.row div.col-12.col-md-6.bg-dark div.container {
+    padding-bottom: 50px;
+}
+
+#my-skills .row, .design, .development, .marketing {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.993), rgba(0, 0, 0, 0.5) 100%);
+}
+
+#my-skills > div > div.row.design > div:nth-child(1) > div.container,
+#my-skills > div > div.row.development > div:nth-child(2) > div.container,
+#my-skills > div > div.row.marketing > div:nth-child(1) > div.container {
+    width:70%;
 }
