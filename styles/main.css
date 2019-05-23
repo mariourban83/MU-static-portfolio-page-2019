@@ -4,7 +4,7 @@ Table of Content
 
 1. Global Styles
 2. Section landing view, Navigation,Background,Related Media Querries
-3. Header section, Related Media Querries 
+3. Header section, Animated Arrow, Related Media Querries 
 4. About me section
 5. What I do section
 6. My skills section
@@ -122,6 +122,47 @@ header.masthead img {
     padding-top: 7rem;
     width: 60px;
 }
+
+/* Arrow only*/
+/* credit rafael amorim    https://codepen.io/raf187/pen/BvgGRQ */ 
+
+.arrow{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+    border-right: 5px solid rgba(0, 0, 0, 0.2);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 3s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+
 
 @media (max-width: 550px) {
 
