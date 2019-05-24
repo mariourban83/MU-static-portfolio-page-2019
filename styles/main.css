@@ -4,10 +4,11 @@ Table of Content
 
 1. Global Styles
 2. Section landing view, Navigation,Background,Related Media Querries
-3. Header section, Animated Arrow, Related Media Querries 
+3. Header section, Animated arrow, Related Media Querries 
 4. About me section
 5. What I do section
 6. My skills section
+7. Portfolio Section
 
 */
 
@@ -21,6 +22,7 @@ Table of Content
 a {
     color: #fff;
     font-size: 22px;
+    font-family: Poppins, sans-serif;
 }
 
 a:hover {
@@ -30,7 +32,7 @@ a:hover {
 p {
     font-family: Roboto, sans-serif;
     font-weight: 300;
-    padding:1rem
+    padding: 1rem
 }
 
 .h3 {
@@ -39,10 +41,35 @@ p {
     letter-spacing: 2px;
 }
 
-.col-12, .col-md-6 {
+.col-12,
+.col-md-6 {
     padding-left: 0;
     padding-right: 0;
 }
+
+.h5,
+h5,
+.h6 {
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+}
+
+.about-me,
+.what-i-do,
+.my-skills,
+.portfolio,
+.contact {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+
+}
+
+#portfolio,
+#about-me {
+    background-color: rgb(241, 241, 241)
+}
+
+
 
 /* 2. Section landing view, Navigation,Background, Related Custom Media Querries */
 
@@ -89,15 +116,16 @@ button.bg-primary:hover {
 .bg-primary {
     background-color: rgba(0, 0, 0, 0) !important;
 }
+
 nav.black {
-    background:rgb(32, 32, 32);
+    background: rgb(32, 32, 32);
     transition: 1s;
 }
 
 @media (max-width: 991px) {
 
     #mainNav .navbar-nav li.nav-item a.nav-link {
-        background:rgb(32, 32, 32);
+        background: rgb(32, 32, 32);
         text-align: center;
     }
 }
@@ -124,15 +152,16 @@ header.masthead img {
 }
 
 /* Arrow only*/
-/* credit rafael amorim    https://codepen.io/raf187/pen/BvgGRQ */ 
+/* credit rafael amorim https://codepen.io/raf187/pen/BvgGRQ */
 
-.arrow{
+.arrow {
     position: absolute;
     top: 95%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
-.arrow span{
+
+.arrow span {
     display: block;
     width: 20px;
     height: 20px;
@@ -142,25 +171,31 @@ header.masthead img {
     margin: -10px;
     animation: animate 3s infinite;
 }
-.arrow span:nth-child(2){
+
+.arrow span:nth-child(2) {
     animation-delay: -0.2s;
 }
-.arrow span:nth-child(3){
+
+.arrow span:nth-child(3) {
     animation-delay: -0.4s;
 }
+
 @keyframes animate {
-    0%{
+    0% {
         opacity: 0;
-        transform: rotate(45deg) translate(-20px,-20px);
+        transform: rotate(45deg) translate(-20px, -20px);
     }
-    50%{
+
+    50% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
+        transform: rotate(45deg) translate(20px, 20px);
     }
 }
+
 
 
 
@@ -189,23 +224,6 @@ header.masthead img {
 
 /* 4. About me Section */
 
-#about-me .img-fluid {
-    padding-top: 15%;
-}
-
-#about-me .h3 {
-    margin-bottom: 10%;
-    
-    
-}
-
-div.container:nth-child(3) {
-    padding-bottom: 30px
-}
-#about-me > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) {
-    padding-bottom: 70px;
-}
-
 
 
 @media (min-width: 992px) {
@@ -227,10 +245,8 @@ div.container:nth-child(3) {
 
 #what-i-do .h3 {
     color: white;
-    padding-top:90px;
+
 }
-
-
 
 #what-i-do .collumn-1,
 .collumn-2,
@@ -268,43 +284,34 @@ div.container:nth-child(3) {
 
 }
 
-@media only screen and (min-width: 750px) {
-    #about-me .h3 {
-        padding-top:15%;
- }
-}
-
-@media only screen and (min-width: 992px) {
-    #about-me .h3 {
-        padding-top:15%;
-    }
-}
-
 
 /* 6. My skills section */
 
-.my-skills {
-    padding-top: 30px;
-    padding-bottom: 15px;
-}
 
-#my-skills > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1),
-#my-skills > div.row.development > div:nth-child(2),
-#my-skills > div.row.marketing > div:nth-child(1) {
+#my-skills>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1),
+#my-skills>div.row.development>div:nth-child(2),
+#my-skills>div.row.marketing>div:nth-child(1) {
     color: white;
     padding-top: 15px;
     padding-bottom: 15px;
 }
-#myskills div#my-skills.container-fluid div.row div.col-12.col-md-6.bg-dark div.container {
-    padding-bottom: 50px;
-}
 
-#my-skills .row, .design, .development, .marketing {
+#my-skills .row,
+.design,
+.development,
+.marketing {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.993), rgba(0, 0, 0, 0.5) 100%);
 }
 
-#my-skills > div > div.row.design > div:nth-child(1) > div.container,
-#my-skills > div > div.row.development > div:nth-child(2) > div.container,
-#my-skills > div > div.row.marketing > div:nth-child(1) > div.container {
-    width:70%;
+#my-skills>div>div.row.design>div:nth-child(1)>div.container,
+#my-skills>div>div.row.development>div:nth-child(2)>div.container,
+#my-skills>div>div.row.marketing>div:nth-child(1)>div.container {
+    width: 70%;
+}
+
+/* Portfolio section */
+
+.carousel-caption {
+    bottom: 70px;
+    background-color: rgba(255, 255, 255, 0.8) !important;
 }
