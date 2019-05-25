@@ -3,13 +3,14 @@
 Table of Content 
 
 1. Global Styles
-2. Section landing view, Navigation
-3. Header section, Animated arrow
+2. Section landing view, Navigation,Background,Related Media Querries
+3. Header section, Animated arrow, Related Media Querries 
 4. About me section
 5. What I do section
 6. My skills section
 7. Portfolio Section
-8. Contact section
+8. Contact Section
+9. Footer section
 
 */
 
@@ -61,15 +62,12 @@ h5,
 .contact {
     padding-top: 4vh;
     padding-bottom: 4vh;
-
 }
 
 #portfolio,
 #about-me {
     background-color: rgb(241, 241, 241)
 }
-
-
 
 /* 2. Section landing view, Navigation,Background, Related Custom Media Querries */
 
@@ -129,7 +127,6 @@ nav.black {
         text-align: center;
     }
 }
-
 
 /* 3. Header section */
 
@@ -196,9 +193,6 @@ header.masthead img {
     }
 }
 
-
-
-
 @media (max-width: 550px) {
 
     header.masthead h2 {
@@ -224,8 +218,6 @@ header.masthead img {
 
 /* 4. About me Section */
 
-
-
 @media (min-width: 992px) {
     #about-me .row {
         width: 768px;
@@ -240,12 +232,10 @@ header.masthead img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
 }
 
 #what-i-do .h3 {
     color: white;
-
 }
 
 #what-i-do .collumn-1,
@@ -281,12 +271,9 @@ header.masthead img {
         margin-top: 10px;
         margin-bottom: 15px;
     }
-
 }
 
-
 /* 6. My skills section */
-
 
 #my-skills>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1),
 #my-skills>div.row.development>div:nth-child(2),
@@ -316,8 +303,6 @@ header.masthead img {
     background-color: rgba(255, 255, 255, 0.8) !important;
 }
 
-
-
 /* 8. Contact section */
 
 #contact>div:nth-child(2)>div>div.col-12.col-md-4>a:nth-child(10):hover,
@@ -341,4 +326,18 @@ header.masthead img {
 
 i.fas:nth-child(2) {
     color: #28a745;
+}
+
+/* 9. Footer section */
+
+#top>footer>div {
+    background-color: rgb(32, 32, 32);
+}
+
+footer {
+    background-color: black;
+}
+
+footer p {
+    margin-bottom: 0;
 }
