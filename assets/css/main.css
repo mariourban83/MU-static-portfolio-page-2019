@@ -330,6 +330,12 @@ i.fas:nth-child(2) {
 
 /* 9. Footer section */
 
+#top>footer>div:nth-child(2)>div>a:nth-child(1),
+#top>footer>div:nth-child(2)>div>a:nth-child(2) {
+    padding: 10px;
+    font-size: 1rem;
+}
+
 #top>footer>div {
     background-color: rgb(32, 32, 32);
 }
