@@ -331,9 +331,13 @@ i.fas:nth-child(2) {
 /* 9. Footer section */
 
 footer > div:nth-child(2) > div:nth-child(1) > div > a:nth-child(1),
-footer > div:nth-child(2) > div:nth-child(1) > div > a:nth-child(2) {
+footer > div:nth-child(2) > div:nth-child(1) > div > a:nth-child(2),
+body > footer > div:nth-child(1) > div > div > h5 {
     padding: 10px;
-    font-size: 1rem;
+    font-size: 1.2rem;
+}
+.fab {
+    font-size: 2rem;
 }
 
 footer>div {
