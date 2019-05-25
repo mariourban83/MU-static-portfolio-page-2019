@@ -6,10 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mario Urban</title>
-  <link rel="shortcut icon" type="image/x-icon" href="assets/images/dev-icon.svg">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/dev-icon.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <!-- Bootstrap & CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link rel="stylesheet" href="styles/main.css">
 </head>
@@ -20,7 +24,7 @@
 
   <div class="section-landing-view">
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand" href="index.html">Mario Urban</a>
         <button class="navbar-toggler navbar-toggler-right text-white" type="button" data-toggle="collapse"
           data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -70,12 +74,12 @@
   <section id="about-me">
     <div class="container-fluid">
       <div class="container text-center my-skills">
-        <div class="h3 text-center font-weight-bold ">What I do</div>
+        <h2 class="display-4 pt-5 pb-3 text-center">About me</h2>
       </div>
       <div class="row">
         <div class="col-12 text-center">
           <img class="img-fluid" src="assets/images/dev-icon.svg" width="275px" alt="picture of developer">
-          <div class="col-12">
+          <div class="col-10 mx-auto pb-5">
             <p>I am motivated, personable Freelance Web Developer who loves to learn and creatively solve problems.<br>
               Online business presence is super important in the modern world. New technologies emerge every month,
               websites get hacked or become slow and not compatible with modern devices. That is where I come in.<br>My
@@ -94,7 +98,7 @@
   <section id="what-i-do">
     <div class="container-fluid">
       <div class="container text-center my-skills">
-        <div class="h3 text-center font-weight-bold ">What I do</div>
+        <h2 class="display-4 pt-5 pb-5 text-center text-white">What I do</h2>
       </div>
       <div class="row ">
         <div class="container col-12 col-lg-4">
@@ -138,7 +142,7 @@
   <section id="my-skills">
     <div class="container-fluid">
       <div class="container  my-skills">
-        <div class="h3 text-center font-weight-bold">My Skills</div>
+        <h2 class="display-4 pt-5 pb-5 text-center">My Skills</h2>
       </div>
       <div class="row  align-items-center design">
         <div class="col-12 col-md-6  ">
@@ -242,7 +246,7 @@
 
   <section id="portfolio">
     <div class="container portfolio">
-      <div class="h3 text-center font-weight-bold">Portfolio</div>
+      <h2 class="display-4 pt-5 pb-5 text-center">Portfolio</h2>
     </div>
     <div class="container">
       <div class="container-fluid">
@@ -254,7 +258,7 @@
               <div class="h6">Graphics Designer <br>Portfolio page</div>
             </div>
           </div>
-          <div class="col-sm-6 pb-3 mx-auto text-center">
+          <div class="col-sm-6 pb-3 mx-auto text-center ">
             <img src="assets/images/portfolio-photography.jpg" alt="test" class="img-fluid ">
             <div class="carousel-caption  bg-light text-dark">
               <div class="h4 pt-3 pb-3">Cathrina Simon </div>
@@ -265,14 +269,55 @@
       </div>
   </section>
 
+  <!--Contact section-->
+  <section id="contact">
+    <div class="container">
+      <h2 class="display-4 pt-5 pb-1 text-center">Contact</h2>
+    </div>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12 col-md-8">
 
-    <script src="/js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+          <div class="jumbotron">
+            <div class="h5 pb-5 ">Got a question, project in mind? Get in touch with me!</div>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="text" placeholder="First name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Your email" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="textarea" rows="3" placeholder="Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-info">Submit information</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 pb-5">
+          <div class="h5 text-center pt-5 pb-5">Contact Details</div>
+          <i class="fas fa-map-marked-alt"></i>
+          <div class="p pb-1 ">Ballinlough </div>
+          <div class="p ">Castlerea</div>
+          <div class="p ">Co. Roscommon</div>
+          <div class="p ">Ireland</div><br>
+          <i class="fas fa-at"></i><br>
+          <a href="mailto:mario@urban.com">Send email</a>.<br>
+          <i class="fas fa-phone"></i> <br>
+          <a href="tel:35312345678">Call directly </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>

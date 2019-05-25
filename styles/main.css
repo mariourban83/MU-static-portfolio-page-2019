@@ -3,12 +3,13 @@
 Table of Content 
 
 1. Global Styles
-2. Section landing view, Navigation,Background,Related Media Querries
-3. Header section, Animated arrow, Related Media Querries 
+2. Section landing view, Navigation
+3. Header section, Animated arrow
 4. About me section
 5. What I do section
 6. My skills section
 7. Portfolio Section
+8. Contact section
 
 */
 
@@ -16,7 +17,6 @@ Table of Content
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap');
-
 
 
 a {
@@ -30,9 +30,9 @@ a:hover {
 }
 
 p {
-    font-family: Roboto, sans-serif;
+    font-family: Poppins, sans-serif;
     font-weight: 300;
-    padding: 1rem
+    padding: 1rem;
 }
 
 .h3 {
@@ -309,9 +309,36 @@ header.masthead img {
     width: 70%;
 }
 
-/* Portfolio section */
+/* 7. Portfolio section */
 
 .carousel-caption {
     bottom: 70px;
     background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+
+
+/* 8. Contact section */
+
+#contact>div:nth-child(2)>div>div.col-12.col-md-4>a:nth-child(10):hover,
+#contact>div:nth-child(2)>div>div.col-12.col-md-4>a:nth-child(14):hover {
+    color: #FBBC04;
+}
+
+#contact>div:nth-child(2)>div>div.col-12.col-md-4>a:nth-child(10),
+#contact>div:nth-child(2)>div>div.col-12.col-md-4>a:nth-child(14) {
+    color: #17a2b8;
+}
+
+
+#contact>div:nth-child(2)>div>div.col-12.col-md-8>div {
+    background-color: transparent;
+}
+
+.jumbotron {
+    padding: 3rem 2rem;
+}
+
+i.fas:nth-child(2) {
+    color: #28a745;
 }
