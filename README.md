@@ -1,7 +1,7 @@
 # Mario Urban - Portfolio page
 Milestone project 1 for Code Institute - Frontend Development Module.
 
-This is my portfolio, single page website to introduce myself. The website is fully responsive and the purpose of it is to show and present myself as an experienced web designer, developer and online marketer.
+This is my portfolio, single page website to introduce myself. The website is fully responsive and the purpose of it is to show and present myself as an experienced web designer, developer and an online marketer.
 
 
 ## Live page
@@ -12,7 +12,8 @@ Live version of my website deployed to  Google Firebase can be found [here](http
 
 ## User Experience Design
 
-The website was designed with user in mind. For design and development, I was using mobile first approach, however, I do expect more users to come from desktop pc's. The main goal of the website is to explain in a simple, yet clear way who I am, what I do, what do I know (my skills), to show some of my projects from the past and also to give the user option to contact me if they wish via contact form, email, phone or find more info about me via social links.
+The website was designed with user in mind. For design and development, I was using mobile first approach, however, I do expect more users to come from desktop pc's. The main goal of the website is to explain in a simple, yet clear way who I am, what I do, what do I know (my skills), to show some of my projects from the past and also to give the user option to contact me if they wish via contact form, email, phone or find more info about me via social links. 
+The website was build mainly for my freelance carrer but also for my potential future employers.
 
 I choosed darker theme for design. Contrasting colors, dark background/white text and vice versa improve readability of the content.
 
@@ -64,6 +65,9 @@ The Javascript code with transition effect is used for changing color from trans
 The website was tested during and after development on multiple devices accross three major browsers, Chrome, Safari and Firefox.
 The devices used for testing where mobile phones such as Samsung Galaxy S4, Apple iPhone SE, Sony Experia, Amazon 7" Fire tablet, HP 14" laptop with medium screen resolution and 23" size full hd screen on desktop pc. 
 Chrome dev tools and Firefox dev tools were also used for testing responsivness of the website.
+
+Both HTML and CSS files were checked with validators and they passed with no errors.
+I could not find any bugs as for now.
 
 Every element and section was adjusted during development stage to respond and adapt to different screen sizes.
 Also, Galaxy S4 ADB with Google Chrome inspection tool was also used during development stage.
