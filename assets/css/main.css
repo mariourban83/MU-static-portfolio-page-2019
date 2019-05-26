@@ -22,7 +22,7 @@ Table of Content
 
 a {
     color: #fff;
-    font-size: 22px;
+    font-size: 1.5rem !important;
     font-family: Poppins, sans-serif;
 }
 
@@ -66,7 +66,7 @@ h5,
 
 #portfolio,
 #about-me {
-    background-color: rgb(241, 241, 241)
+    background-color: rgb(241, 241, 241);
 }
 
 /* 2. Section landing view, Navigation,Background, Related Custom Media Querries */
@@ -120,7 +120,7 @@ nav.black {
     transition: 1s;
 }
 
-@media (max-width: 991px) {
+@media only screen and (max-width: 991px) {
 
     #mainNav .navbar-nav li.nav-item a.nav-link {
         background: rgb(32, 32, 32);
@@ -193,7 +193,7 @@ header.masthead img {
     }
 }
 
-@media (max-width: 550px) {
+@media only screen and (max-width: 550px) {
 
     header.masthead h2 {
         font-size: 24px;
@@ -210,7 +210,7 @@ header.masthead img {
     }
 }
 
-@media (max-width: 400px) {
+@media only screen and (max-width: 400px) {
     header.masthead {
         padding-top: 35vh;
     }
@@ -218,7 +218,7 @@ header.masthead img {
 
 /* 4. About me Section */
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
     #about-me .row {
         width: 768px;
         margin: auto;
@@ -254,7 +254,7 @@ header.masthead img {
 
 @media only screen and (min-width: 992px) {
     #what-i-do .row {
-        width: 90%;
+        width: 85%;
         margin: auto;
     }
 
@@ -269,7 +269,8 @@ header.masthead img {
     .collumn-2,
     .collumn-3 {
         margin-top: 10px;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
+        width: 85%
     }
 }
 
@@ -328,6 +329,12 @@ i.fas:nth-child(2) {
     color: #28a745;
 }
 
+@media only screen and (max-width: 767px) {
+    .jumbotron {
+        margin-bottom: 0;
+    }
+}
+
 /* 9. Footer section */
 
 footer > div:nth-child(2) > div:nth-child(1) > div > a:nth-child(1),
@@ -337,15 +344,19 @@ body > footer > div:nth-child(1) > div > div > h5 {
     font-size: 1.2rem;
 }
 .fab {
-    font-size: 2rem;
+    font-size: 2.2rem;
+}
+
+body > footer > div:nth-child(2) > div:nth-child(1) > div > a {
+    font-size: 1rem !important;
 }
 
 footer>div {
-    background-color: rgb(32, 32, 32);
+    background-color:  rgb(32, 32, 32);
 }
 
 footer {
-    background-color: black;
+    background-color:  rgb(32, 32, 32) !important;
 }
 
 footer p {
